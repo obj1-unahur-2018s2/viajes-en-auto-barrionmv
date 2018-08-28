@@ -29,13 +29,11 @@ object juana {
 }
 
 object lucia { //le dice a lucia a quien está reemplazando
-	var choferReemplazado
 	
-	method reemplazaA(chofer){
-		choferReemplazado = chofer
-	}
+	var choferReemplazado = ludmila
 	
-	method precioViaje(cliente, kms){
-		return choferReemplazado.precioViaje(cliente, kms)
-	}
+	method reemplazaA(chofer){	choferReemplazado = chofer}
+	
+	method precioViaje(cliente, kms){ return choferReemplazado.precioViaje(cliente, kms)}
 }
+
